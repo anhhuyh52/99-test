@@ -46,8 +46,7 @@ export const TokenSelector: React.FC<TokenSelectorProps> = ({
           token.currency.toLowerCase().includes(query.toLowerCase())
         );
 
-  const getTokenIconPath = (symbol: string) =>
-    `/src/assets/${symbol}.svg`;
+  const getTokenIconPath = (symbol: string) => `/assets/${symbol}.svg`;
 
   useEffect(() => {
     onSelect(selected);
